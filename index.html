@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görev Takip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hoş Geldiniz, <span id="user-name">Kullanıcı</span>!</h1>
+        <div class="task-input">
+            <input type="text" id="task-name" placeholder="Görev Adı">
+            <button id="add-task">Görev Ekle</button>
+        </div>
+        <h2>Görevleriniz:</h2>
+        <div class="task-filters">
+            <button data-filter="all">Tümü</button>
+            <button data-filter="pending">Yapılacak</button>
+            <button data-filter="inprogress">Yapılıyor</button>
+            <button data-filter="completed">Tamamlandı</button>
+        </div>
+        <ul id="task-list">
+            <!-- Görevler burada görünecek -->
+        </ul>
+        <div class="report">
+            <h3>Raporlama:</h3>
+            <p>Toplam Görev Sayısı: <span id="total-tasks">0</span></p>
+            <p>Tamamlanan Görev Sayısı: <span id="completed-tasks">0</span></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
